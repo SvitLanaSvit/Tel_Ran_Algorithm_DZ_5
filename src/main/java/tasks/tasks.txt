@@ -1,0 +1,28 @@
+First level: 1. Реализовать метод search() у написанного на занятии стека MyStack (см. код в репозитории).
+public int search(int element) -  определяет, существует ли объект в стеке.
+Если элемент найден, возвращает позицию элемента с вершины стека. В противном случае он возвращает -1. +
+
+Классическая Queue - реализовать используя массив (Array)
+pushToEnd(int data) - вставляет элемент в конец queue
+remove() - удаляет элемент из начала queue
+peek() - возвращает элемент из начала не удаляя его
+isEmpty()
+size()
+начало:
+public class Queue
+private int[] arr;      // массив для хранения элементов queue
+private int head;      // head указывает на передний элемент в queue
+private int tail;       // tail часть указывает на последний элемент в queue
+private int capacity;   // максимальная емкость queue
+private int count;      // текущий размер queue
+
+// Конструктор для инициализации queue
+public Queue(int size)
+{
+    arr = new int[size];
+    capacity = size;
+    head = 0;
+    tail = -1;
+    count = 0;
+}
+// ?? ….. дальше самостоятельно
